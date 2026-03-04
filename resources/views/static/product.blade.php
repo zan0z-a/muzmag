@@ -1,0 +1,185 @@
+@include('/blocks/header') 
+
+@extends('/layouts/main') 
+
+@section('header-title')
+{{ $product->title }}
+@endsection
+
+@section('page-title')
+{{ $product->title }}
+@endsection
+
+@section('content')
+<div class="product-page">
+    <div class="product-container">
+        <div class="product-image-section">
+            <img src="{{ ('image/' . $product->img) }}" alt="{{ $product->title }}" class="product-main-image">
+        </div>
+        
+        <div class="product-info-section">
+            <h1 class="product-title">{{ $product->title }}</h1>
+            
+            <div class="product-price">{{ number_format($product->price, 1, '.', ' ') }} ₽</div>
+            
+            <div class="product-description">
+                <h3>Описание</h3>
+                <p>{{ $product->description }}</p>
+            </div>
+            
+            <form action="{{ route('cart.add', $product->id) }}" method="POST">
+                @csrf
+                <button type="submit" class="buy-button">В корзину</button>
+            </form>
+
+
+        </div>
+    </div>
+</div>
+@endsection
+
+<style>
+.product-page {
+    padding: 20px;
+}
+
+.product-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: rgba(25, 25, 30, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 140, 50, 0.2);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.product-image-section {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.product-main-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.product-info-section {
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-title {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.3;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.product-price {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffb347;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.product-description {
+    padding: 15px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.product-description h3 {
+    font-size: 18px;
+    color: #ffb347;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.product-description p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.buy-button {
+    background: rgba(255, 140, 50, 0.25);
+    border: 1px solid rgba(255, 140, 50, 0.4);
+    color: #ffb347;
+    padding: 16px 36px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    align-self: flex-start;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.buy-button:hover {
+    background: rgba(255, 140, 50, 0.4);
+    color: #fff;
+    border-color: #ffb347;
+}
+
+@media (max-width: 992px) {
+    .product-container {
+        grid-template-columns: 1fr;
+        max-width: 550px;
+    }
+    
+    .product-image-section,
+    .product-info-section {
+        padding: 25px;
+    }
+    
+    .product-title {
+        font-size: 24px;
+    }
+    
+    .product-price {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 576px) {
+    .product-page {
+        padding: 15px;
+    }
+    
+    .product-image-section,
+    .product-info-section {
+        padding: 20px;
+    }
+    
+    .product-title {
+        font-size: 22px;
+    }
+    
+    .product-price {
+        font-size: 26px;
+    }
+    
+    .buy-button {
+        width: 100%;
+        padding: 14px;
+    }
+}
+</style>
