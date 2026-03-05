@@ -86,16 +86,4 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         }
         
-        /* Адаптивность */
-        @media (max-width: 768px) {
-            .main-card {
-                padding: 20px;
-                margin: 10px;
-                border-radius: 15px;
-            }
-            
-            .page-title {
-                font-size: 1.5rem;
-            }
-        }
     </style>

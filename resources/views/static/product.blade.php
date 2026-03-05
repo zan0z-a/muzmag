@@ -138,48 +138,4 @@
     color: #fff;
     border-color: #ffb347;
 }
-
-@media (max-width: 992px) {
-    .product-container {
-        grid-template-columns: 1fr;
-        max-width: 550px;
-    }
-    
-    .product-image-section,
-    .product-info-section {
-        padding: 25px;
-    }
-    
-    .product-title {
-        font-size: 24px;
-    }
-    
-    .product-price {
-        font-size: 28px;
-    }
-}
-
-@media (max-width: 576px) {
-    .product-page {
-        padding: 15px;
-    }
-    
-    .product-image-section,
-    .product-info-section {
-        padding: 20px;
-    }
-    
-    .product-title {
-        font-size: 22px;
-    }
-    
-    .product-price {
-        font-size: 26px;
-    }
-    
-    .buy-button {
-        width: 100%;
-        padding: 14px;
-    }
-}
 </style>

@@ -64,7 +64,7 @@
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 140, 50, 0.2);
     border-radius: 20px;
-    padding: 30px;  /* Уменьшил с 35px до 30px */
+    padding: 30px;  
     max-width: 800px;
     width: 100%;
     margin: 20px auto;
@@ -72,45 +72,45 @@
 }
 
 .intro-text {
-    font-size: 15px;  /* Уменьшил с 16px */
+    font-size: 15px;  
     line-height: 1.5;
-    margin-bottom: 20px;  /* Уменьшил с 25px */
+    margin-bottom: 20px;
     color: rgba(255, 255, 255, 0.9);
 }
 
 .contacts-info {
     background: rgba(0, 0, 0, 0.2);
     border-radius: 12px;
-    padding: 15px;  /* Уменьшил с 20px */
-    margin-bottom: 25px;  /* Уменьшил с 30px */
+    padding: 15px; 
+    margin-bottom: 25px; 
 }
 
 .contact-row {
-    padding: 8px 0;  /* Уменьшил с 10px */
+    padding: 8px 0; 
 }
 
 .contact-label {
-    width: 80px;  /* Уменьшил со 100px */
-    font-size: 14px;  /* Уменьшил с 15px */
+    width: 80px;  
+    font-size: 14px;
 }
 
 .contact-value {
-    font-size: 15px;  /* Уменьшил с 16px */
+    font-size: 15px;
 }
 
 .contact-form {
-    gap: 15px;  /* Уменьшил с 20px */
-    margin-top: 15px;  /* Уменьшил с 20px */
+    gap: 15px; 
+    margin-top: 15px; 
 }
 
 .form-input,
 .form-textarea {
-    padding: 12px 14px;  /* Уменьшил с 14px 16px */
+    padding: 12px 14px;
 }
 
 .submit-button {
-    padding: 12px;  /* Уменьшил с 14px */
-    font-size: 15px;  /* Уменьшил с 16px */
+    padding: 12px;
+    font-size: 15px;  
 }
 
 .admin-link {

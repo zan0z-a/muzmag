@@ -47,20 +47,20 @@
 
 .product-image {
     width: 100%;
-    height: 200px;  /* Уменьшил высоту с 250px до 200px */
+    height: 200px; 
     object-fit: cover;
     display: block;
 }
 
 .product-info {
-    padding: 15px;  /* Уменьшил padding */
+    padding: 15px;  
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
 
 .product-title {
-    font-size: 16px;  /* Уменьшил шрифт */
+    font-size: 16px;  
     color: rgba(255, 255, 255, 0.95);
     font-weight: 500;
     margin: 0 0 8px 0;
@@ -69,22 +69,22 @@
 }
 
 .product-price {
-    font-size: 20px;  /* Уменьшил шрифт */
+    font-size: 20px;
     font-weight: 700;
-    color: #ffb347;  /* Оранжевый */
-    margin: 5px 0 15px 0;  /* Уменьшил отступы */
+    color: #ffb347;  
+    margin: 5px 0 15px 0; 
 }
 
 .details-btn {
     display: block;
-    padding: 10px;  /* Уменьшил padding */
+    padding: 10px; 
     background: rgba(255, 140, 50, 0.25);
     color: #ffb347;
     text-align: center;
     text-decoration: none;
     border-radius: 6px;
     font-weight: 600;
-    font-size: 14px;  /* Уменьшил шрифт */
+    font-size: 14px; 
     border: 1px solid rgba(255, 140, 50, 0.3);
     cursor: pointer;
     margin-top: auto;
@@ -95,25 +95,5 @@
     background: rgba(255, 140, 50, 0.4);
     color: #ffffff;
     border-color: #ffb347;
-}
-
-@media (max-width: 1200px) {
-    .products-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .products-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        padding: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .products-grid {
-        grid-template-columns: 1fr;
-    }
 }
 </style>

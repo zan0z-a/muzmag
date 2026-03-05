@@ -37,8 +37,8 @@
         backdrop-filter: blur(10px);  
         border-radius: 20px;
         padding: 20px 0;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  /* Легкая тень */
-        border: 1px solid rgba(255, 255, 255, 0.1);  /* Тонкая граница */
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+        border: 1px solid rgba(255, 255, 255, 0.1);  
         overflow-y: auto;
         z-index: 1000;
     }

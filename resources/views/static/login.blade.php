@@ -52,15 +52,15 @@
 <style>
 
     .login-section {
-    background: rgba(25, 25, 30, 0.5);  /* Более яркий и прозрачный (было 0.7) */
-    backdrop-filter: blur(5px);          /* Меньше размытия */
+    background: rgba(25, 25, 30, 0.5);  
+    backdrop-filter: blur(5px);        
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 140, 50, 0.2);
     border-radius: 20px;
     padding: 40px;
     max-width: 450px;
     width: 100%;
-    margin: 20px auto;  /* Убрал центрирование через wrapper, просто auto */
+    margin: 20px auto;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 .section-title {
@@ -165,16 +165,5 @@
 
 .form-footer a:hover {
     color: #ffb347;
-}
-
-@media (max-width: 768px) {
-    .login-section {
-        padding: 25px;
-        margin: 15px;
-    }
-    
-    .section-title {
-        font-size: 24px;
-    }
 }
 </style>
