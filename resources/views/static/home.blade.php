@@ -3,7 +3,7 @@
 @extends('/layouts/main') 
 
 @section('header-title')
-Главная страница
+Тест
 @endsection
  <!-- @foreach ($goods as $product)
     <div class="product-card">
